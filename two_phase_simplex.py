@@ -209,10 +209,11 @@ class TwoPhasesSimplex:
             for col in range(self.n_vars):
                 lhs = [self.rows[i][col] for i in range(len(self.rows))]
                 indices = [i for i, x in enumerate(lhs) if x == 1]
+                nonzero_indices = [i for i, x in enumerate(lhs) if x != 0]
                 if len(indices) > 1:
                     self.op_sol[col].append(0)
                     continue
-                if len(indices) == 1:
+                elif len(indices) == 1 and len(nonzero_indices) == 1:
                     row = indices[0]
                     self.op_sol.append(self.rows[row][-1])
                 else:

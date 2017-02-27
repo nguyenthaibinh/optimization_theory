@@ -146,19 +146,20 @@ class Simplex:
                 
         if status == 1:
             print ("The optimal solution is REACHED!")
-            
+            print ("Stopping condition is reached")
             for col in range(self.n_vars):
-                if self.obj[col] > 0:
-                    self.op_sol.append(0)
-                    continue
                 lhs = [self.rows[i][col] for i in range(len(self.rows))]
                 indices = [i for i, x in enumerate(lhs) if x == 1]
+                nonzero_indices = [i for i, x in enumerate(lhs) if x != 0]
                 if len(indices) > 1:
                     self.op_sol[col].append(0)
                     continue
-                else:
+                elif len(indices) == 1 and len(nonzero_indices) == 1:
                     row = indices[0]
                     self.op_sol.append(self.rows[row][-1])
+                else:
+                    self.op_sol.append(0)
+
             self.op_value =  self.obj[-1]
             
             self._display_solution()
