@@ -1,5 +1,6 @@
 ---
 Title: README
+layout: page
 ---
 ## The source code for one-phase simplex method and two-phase simplex method
 
