@@ -10,7 +10,7 @@ This is a library written in Python for the simplex method in Linear Programming
 
 The library can solve the linear pramming problem with mixed constraints, i.e., in the following form:
 
-$min z = c_1x_1$
+\\[ \frac{1}{n^{2}} \\]
 
 ### File structure:
 - simplex.py: the implementation of one-phase simplex class
