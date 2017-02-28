@@ -1,6 +1,9 @@
 ---
 Title: README
 layout: page
+markdown: kramdown
+kramdown:
+  input: GFM
 ---
 ## The source code for one-phase simplex method and two-phase simplex method
 
