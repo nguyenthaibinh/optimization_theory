@@ -35,6 +35,8 @@ t.solve()
 
 ### Some examples:
 - Example using both one-phase simplex and two-phase simplex
+https://github.com/nguyenthaibinh/optimization_theory/blob/master/test_simplex.ipynb
 
 - An example that one-phase simplex method CANNOT solve but two-phase simplex method CAN solve
+https://github.com/nguyenthaibinh/optimization_theory/blob/master/test_simplex2.ipynb
   
