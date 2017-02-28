@@ -16,9 +16,9 @@ The library can solve the linear pramming problem with mixed constraints.
 from simplex import Simplex
 
 t = sp.Simplex("min", [-3, -1, -3])
-t.add_constraint([2, 1, 1], 2, "<")
+t.add_constraint([2, 1, 1], 2, ">=")
 t.add_constraint([1, 1, 3], 5, "<=")
-t.add_constraint([2, 2, 1], 6, "<=")
+t.add_constraint([2, 2, 1], 6, "=")
 t.solve()
 
 ```
