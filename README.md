@@ -2,11 +2,7 @@
 
 This is a library written in Python for the simplex method in Linear Programming. The library includes one-phase simplex and two-phase simplex method.
 
-The library can solve the linear pramming problem with mixed constraints, i.e., in the following form:
-
-\\[ \frac{1}{n^{2}} \\]
-
-$\frac{1}{n^{2}}$
+The library can solve the linear pramming problem with mixed constraints.
 
 ### File structure:
 - simplex.py: the implementation of one-phase simplex class
