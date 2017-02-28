@@ -1,3 +1,6 @@
+---
+Title: README
+---
 ## The source code for one-phase simplex method and two-phase simplex method
 
 This is a library written in Python for the simplex method in Linear Programming. The library includes one-phase simplex and two-phase simplex method.
