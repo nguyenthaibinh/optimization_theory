@@ -32,3 +32,9 @@ t.add_constraint([1, 1, 3], 5, "<=")
 t.add_constraint([2, 2, 1], 6, "=")
 t.solve()
 ```
+
+### Some examples:
+- Example using both one-phase simplex and two-phase simplex
+
+- An example that one-phase simplex method CANNOT solve but two-phase simplex method CAN solve
+  
