@@ -28,12 +28,16 @@ t.solve()
 #### Two-phase simplex method
 ```python
 from two_phase_simplex import Simplext
+
 t = sp2.Simplex2("min", [-3, -1, -3])
 t.add_constraint([2, 1, 1], 2, ">=")
 t.add_constraint([1, 1, 3], 5, "<=")
 t.add_constraint([2, 2, 1], 6, "=")
 t.solve()
 ```
+
+### Requirements
+Python 3.x with **numpy** library installed.
 
 ### Some examples:
 - Example using both one-phase simplex and two-phase simplex
