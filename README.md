@@ -7,3 +7,18 @@ The library can solve the linear pramming problem with mixed constraints.
 ### File structure:
 - simplex.py: the implementation of one-phase simplex class
 - two_phase_simplex.py: the implementation of two-phase simplex class
+
+### Usage:
+
+#### One-phase simplex
+```python
+
+from simplex import Simplex
+
+t = sp.Simplex("min", [-3, -1, -3])
+t.add_constraint([2, 1, 1], 2, "<")
+t.add_constraint([1, 1, 3], 5, "<=")
+t.add_constraint([2, 2, 1], 6, "<=")
+t.solve()
+
+```
