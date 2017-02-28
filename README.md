@@ -7,6 +7,8 @@ The library can solve the linear pramming problem with mixed constraints.
 ### File structure:
 - simplex.py: the implementation of one-phase simplex class
 - simplex2.py: the implementation of two-phase simplex class
+- test_simplex.py, test_simplex2.py: the script to test the library
+- test_simplex.ipynb, test_simplex2.ipynb: the test results in jupyter notebook
 
 ### Usage:
 
